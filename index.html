@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - SWAPI JS M11</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+
+    <div class="content">
+      <div class="search">
+        <div class="search_form">
+          <form>
+          <label>
+            Поиск
+            <input type="text" class="object_search" id="object_search_input" />
+          </label>
+          <label>
+            Что ищем?
+            <select type="text" class="person_search" id="type_search_select">
+              <option value="people">Персонажи</option>
+              <option value="starships">Корабли</option>
+              <option value="planets">Планеты</option>
+            </select>
+          </label>
+          <button id="search_request_btn" class="button">Найти</button>
+          </form>
+        </div>
+        <ul class="search_result"></ul>
+      </div>
+
+      <div class="person_data"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
